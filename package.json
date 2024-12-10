@@ -14,7 +14,8 @@
     "eslint:fix": "npx eslint src/** test/*.test.js --fix  && npx eslint tools --fix",
     "test:update": "cd test && npx hardhat compile && cd .. && ./tools/update-tests/update-tests.sh",
     "test:database": "npx mocha ./test/database.test.js",
-    "build:inputs": "npx mocha ./test/processor.test.js --update --geninputs && npx mocha ./test/processor.test.js --etrog --update --geninputs"
+    "build:inputs": "npx mocha ./test/processor.test.js --update --geninputs && npx mocha ./test/processor.test.js --etrog --update --geninputs",
+    "test:utils": "npx mocha ./test/processor-utils.test.js"
   },
   "repository": {
     "type": "git",
